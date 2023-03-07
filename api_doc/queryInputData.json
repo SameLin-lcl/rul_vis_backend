@@ -1,0 +1,47 @@
+{
+  "params": {
+    "models": "模型名字列表， 控制下面instance.modelPerf。// ['SVR', 'LSTM']",
+    "rul": "首尾端点列表：过滤instance // [50, 100] 控制所有 50 <= rul <= 100 的instance，也就是 input",
+    "units": "unitId 列表"
+  },
+  "data": {
+    "maxMin": {
+        "x": {
+            "max": 100,
+            "min": 0
+        },
+        "y": {
+            "max": 100,
+            "min": 0
+        },
+        "modelPref": {
+            "max": 100,
+            "min": 0
+        }
+    },
+    "instances": [
+        {
+            "instanceId": 0,
+            "unitId": 4,
+            "x": 52,
+            "y": 23,
+            "rul": 69,
+            "rulMax": 100,
+            "modelPerf": [
+                {
+                    "label": "RF",
+                    "value": 59
+                },
+                {
+                    "label": "LSTM",
+                    "value": 76
+                },
+                {
+                    "label": "MLP",
+                    "value": 89
+                }
+            ]
+        }
+    ]
+}
+}

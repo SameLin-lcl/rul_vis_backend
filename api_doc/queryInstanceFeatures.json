@@ -1,0 +1,75 @@
+{
+  "data": {
+    "maxMin": {
+        "importance": {
+            "max": 100,
+            "min": 0
+        }
+    },
+    "features": [
+        {
+            "name": "s17",
+            "max": 100,
+            "min": -100,
+            "overImportance": [
+                {
+                    "label": "RF",
+                    "importance": 0.0920969970109522
+                },
+                {
+                    "label": "LSTM",
+                    "importance": 0.12202291639912533
+                },
+                {
+                    "label": "MLP",
+                    "importance": 0.3637344044163435
+                }
+            ]
+        }
+    ],
+    "instances": [
+        {
+            "instanceId": 58698,
+            "unitId": 0,
+            "x": 78,
+            "y": 48,
+            "rul": 61,
+            "rulMax": 100,
+            "modelPerf": [
+                {
+                    "label": "RF",
+                    "value": 43
+                },
+                {
+                    "label": "LSTM",
+                    "value": 81
+                },
+                {
+                    "label": "MLP",
+                    "value": 78
+                }
+            ],
+            "features": [
+                {
+                    "label": "s4",
+                    "value": 57,
+                    "importance": [
+                        {
+                            "label": "RF",
+                            "value": -0.8610095689031692
+                        },
+                        {
+                            "label": "LSTM",
+                            "value": -0.8820419696159725
+                        },
+                        {
+                            "label": "MLP",
+                            "value": 0.5740527731024843
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+}
