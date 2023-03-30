@@ -40,6 +40,7 @@ class TestInstances(models.Model):
     cnn1_loss = models.FloatField(db_column='CNN1_loss', blank=True, null=True)  # Field name made lowercase.
     gru_loss = models.FloatField(db_column='GRU_loss', blank=True, null=True)  # Field name made lowercase.
     lstm1_loss = models.FloatField(db_column='LSTM1_loss', blank=True, null=True)  # Field name made lowercase.
+    rve_loss = models.FloatField(db_column='RVE_loss', blank=True, null=True)  # Field name made lowercase.
     umap_x = models.FloatField(blank=True, null=True)
     umap_y = models.FloatField(blank=True, null=True)
     pca_x = models.FloatField(blank=True, null=True)
@@ -163,6 +164,20 @@ class ShapValue(models.Model):
     rnn_s_17 = models.FloatField(db_column='RNN_s_17', blank=True, null=True)  # Field name made lowercase.
     rnn_s_20 = models.FloatField(db_column='RNN_s_20', blank=True, null=True)  # Field name made lowercase.
     rnn_s_21 = models.FloatField(db_column='RNN_s_21', blank=True, null=True)  # Field name made lowercase.
+    rve_s_2 = models.FloatField(db_column='RVE_s_2', blank=True, null=True)  # Field name made lowercase.
+    rve_s_3 = models.FloatField(db_column='RVE_s_3', blank=True, null=True)  # Field name made lowercase.
+    rve_s_4 = models.FloatField(db_column='RVE_s_4', blank=True, null=True)  # Field name made lowercase.
+    rve_s_7 = models.FloatField(db_column='RVE_s_7', blank=True, null=True)  # Field name made lowercase.
+    rve_s_8 = models.FloatField(db_column='RVE_s_8', blank=True, null=True)  # Field name made lowercase.
+    rve_s_9 = models.FloatField(db_column='RVE_s_9', blank=True, null=True)  # Field name made lowercase.
+    rve_s_11 = models.FloatField(db_column='RVE_s_11', blank=True, null=True)  # Field name made lowercase.
+    rve_s_12 = models.FloatField(db_column='RVE_s_12', blank=True, null=True)  # Field name made lowercase.
+    rve_s_13 = models.FloatField(db_column='RVE_s_13', blank=True, null=True)  # Field name made lowercase.
+    rve_s_14 = models.FloatField(db_column='RVE_s_14', blank=True, null=True)  # Field name made lowercase.
+    rve_s_15 = models.FloatField(db_column='RVE_s_15', blank=True, null=True)  # Field name made lowercase.
+    rve_s_17 = models.FloatField(db_column='RVE_s_17', blank=True, null=True)  # Field name made lowercase.
+    rve_s_20 = models.FloatField(db_column='RVE_s_20', blank=True, null=True)  # Field name made lowercase.
+    rve_s_21 = models.FloatField(db_column='RVE_s_21', blank=True, null=True)  # Field name made lowercase.
     svr_s_2 = models.FloatField(db_column='SVR_s_2', blank=True, null=True)  # Field name made lowercase.
     svr_s_3 = models.FloatField(db_column='SVR_s_3', blank=True, null=True)  # Field name made lowercase.
     svr_s_4 = models.FloatField(db_column='SVR_s_4', blank=True, null=True)  # Field name made lowercase.
@@ -256,6 +271,10 @@ class RulLoss(models.Model):
     lstm1_std = models.FloatField(db_column='LSTM1_std', blank=True, null=True)  # Field name made lowercase.
     lstm1_max = models.FloatField(db_column='LSTM1_max', blank=True, null=True)  # Field name made lowercase.
     lstm1_min = models.FloatField(db_column='LSTM1_min', blank=True, null=True)  # Field name made lowercase.
+    rve_mean = models.FloatField(db_column='RVE_mean', blank=True, null=True)  # Field name made lowercase.
+    rve_std = models.FloatField(db_column='RVE_std', blank=True, null=True)  # Field name made lowercase.
+    rve_max = models.FloatField(db_column='RVE_max', blank=True, null=True)  # Field name made lowercase.
+    rve_min = models.FloatField(db_column='RVE_min', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False

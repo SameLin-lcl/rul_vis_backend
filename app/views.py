@@ -43,7 +43,7 @@ def queryUnitsPca(request):
 
 
 def queryModelScore(request):
-    queryset = ModelScores.objects.exclude(model='BAYES')
+    queryset = ModelScores.objects.exclude(model__in=['BAYES','LSTM1', 'GRU'])
     loss_queryset = RulLoss.objects.all()
 
     score_columns = ["score", "rsme", "r2"]
